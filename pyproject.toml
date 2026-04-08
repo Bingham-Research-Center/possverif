@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "possverif"
+version = "0.1.0"
+description = "Possibilistic forecast verification scorecard"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24"]
+license = "MIT"
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
