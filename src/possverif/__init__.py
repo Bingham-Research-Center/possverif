@@ -18,5 +18,11 @@ Usage::
 """
 
 from possverif.distribution import PossibilisticDistribution, Scorecard
+from possverif.information import brier_score, log_score, kl_divergence, information_gain
+from possverif.aggregation import aggregate_scorecards, aggregate_forecasts
 
-__all__ = ["PossibilisticDistribution", "Scorecard"]
+__all__ = [
+    "PossibilisticDistribution", "Scorecard",
+    "brier_score", "log_score", "kl_divergence", "information_gain",
+    "aggregate_scorecards", "aggregate_forecasts",
+]
